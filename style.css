@@ -192,21 +192,23 @@ nav ul li a:hover::after{
     padding: 50px 0;
 }
 
-.work-list{
+.project-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.work{
+.project{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.work img{
+.project img{
+    border: 5px solid #ababab;
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -249,11 +251,11 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-.work:hover img{
+.project:hover img{
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.project:hover .layer{
     height: 100%;
 }
 
@@ -331,6 +333,10 @@ form input, form textarea{
     color: #333333;
     font-size: 18px;
     border-radius: 6px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: #333333;
 }
 
 form .btn2{

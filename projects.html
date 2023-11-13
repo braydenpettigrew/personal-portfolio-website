@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brayden Pettigrew - Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/11eb8d3ef0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="portfolio">
+        <div class="container">
+            <nav>
+                <!-- unordered list: -->
+                <ul id="sidemenu">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#portfolio">Portfolio</a>
+                    </li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Image Search App</h3>
+                        <p>The app allows the user to search for images and view the images.</p>
+                        <a href="/image-app.html" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>TBD</h3>
+                        <p>This project is TBD.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>TBD</h3>
+                        <p>This project is TBD.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <a href="https://github.com/braydenpettigrew" target="_blank" class = "btn">See more</a>
+        </div>
+    </div>
+
+    <!-- JavaScript for the side menu on smaller devices -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";            
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";            
+        }
+    </script>
+
+</body>
+</html>
