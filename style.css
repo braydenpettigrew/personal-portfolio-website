@@ -22,6 +22,7 @@ body{
     background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .container{
@@ -31,11 +32,17 @@ body{
 
 nav{
     /* image and list will be side by side */
+    background: fixed;
+    height: 50px;
+    background-color: #67B3E0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 1125px;
+    margin-top: 10px;
+    position: fixed;
+    right: 20px;
+    z-index: 2;
 }
 
 .logo{
@@ -86,13 +93,14 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #000;
+    color: #333333;
 }
 
 /* ---------------about-------------- */
 
 #about{
     /* 80 pixels from top and bottom, 0 pixels from left and right */
+    z-index: 1;
     padding: 80px 0;
     color: #333333;
 }
@@ -117,6 +125,10 @@ nav ul li a:hover::after{
 .about-col-2{
     /* the width of the column will be 60% */
     flex-basis: 60%;
+}
+
+.about-col-2 p{
+    margin-top: 20px;
 }
 
 .sub-title{
@@ -155,7 +167,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li{
-    list-style: none;
+    /* list-style: none; */
     /* 10 pixels from top and bottom, 0 pixels from left and right */
     margin: 10px 0;
 }
@@ -313,7 +325,7 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #ababab;
     padding: 15px;
     margin: 15px 0;
     color: #333333;
@@ -332,7 +344,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #333333;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -370,7 +382,7 @@ nav .fa-solid{
     }
 
     nav ul{
-        background: #ff004f;
+        background: #67B3E0;
         position: fixed;
         top: 0;
         right: -200px;
