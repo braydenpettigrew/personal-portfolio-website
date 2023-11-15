@@ -377,6 +377,10 @@ nav .fa-solid{
         font-size: 30px;
     }
 
+    nav{
+        height: 0;
+    }
+
     nav .fa-regular{
         display: block;
         font-size: 25px;
@@ -385,6 +389,7 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        color: #333333;
     }
 
     nav ul{
