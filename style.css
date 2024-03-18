@@ -117,7 +117,8 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img{
-    width: 100%;
+    width: 75%;
+    margin-left: 100px;
     /* the border of the image will be round */
     border-radius: 15px;
 }
