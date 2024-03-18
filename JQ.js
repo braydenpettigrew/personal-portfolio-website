@@ -35,4 +35,12 @@ $(document).ready(function(){
         // Add active class to the corresponding tab content
         $("#" + tabId).addClass("active-tab");
     });
+
+    // Hovering over a button
+    $("button").mouseenter(function(){
+        $("button").css('opacity', '50%');
+    });
+    $("button").mouseleave(function(){
+        $("button").css('opacity', '100%');
+    });
 });
