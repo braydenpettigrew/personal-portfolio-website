@@ -139,6 +139,12 @@ nav ul li a:hover::after{
     color: #67B3E0;
 }
 
+.sub-sub-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #333333;
+}
+
 .tab-titles{
     display: flex;
     /* 20 pixels from top, 0 pixels from left and right, 40 pixels form the bottom */
@@ -195,7 +201,7 @@ nav ul li a:hover::after{
 }
 
 .project-list{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
@@ -203,6 +209,7 @@ nav ul li a:hover::after{
 
 .project{
     border-radius: 10px;
+    width: 400px;
     position: relative;
     overflow: hidden;
 }
@@ -275,6 +282,21 @@ nav ul li a:hover::after{
 
 .btn:hover{
     background: #67B3E0;
+}
+
+.project-desc{
+    /* display: block; */
+    color: #0d4597;
+    margin-top: 20px;
+}
+
+.other-projects{
+    margin-top: 30px;
+}
+
+.other-projects ul li{
+    color: #333333;
+    margin-left: 25px;
 }
 
 
