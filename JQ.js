@@ -21,7 +21,6 @@
 //     function opentab(){
 //         $(".tab-links").removeClass("active-link");
 //         $(".tab-contents").removeClass("active-tab");
-
 //     }
 
 $(document).ready(function(){
@@ -37,10 +36,16 @@ $(document).ready(function(){
     });
 
     // Hovering over a button
-    $("button").mouseenter(function(){
-        $("button").css('opacity', '50%');
+    $(".btn.btn2").mouseenter(function(){
+        // $("button").css('opacity', '50%');
+        $(this).animate({
+            opacity: 0.5 // 50% opacity
+        }, 200); // 500 milliseconds
     });
-    $("button").mouseleave(function(){
-        $("button").css('opacity', '100%');
+    $(".btn.btn2").mouseleave(function(){
+        // $("button").css('opacity', '100%');
+        $(this).animate({
+            opacity: 1 // 100% opacity
+        }, 200); // 500 milliseconds
     });
 });
