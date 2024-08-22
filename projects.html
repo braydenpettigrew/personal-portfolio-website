@@ -1,107 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brayden Pettigrew - Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-    <script src="https://kit.fontawesome.com/11eb8d3ef0.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/11eb8d3ef0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="portfolio">
-        <div class="container">
-            <nav>
-                <!-- unordered list: -->
-                <ul id="sidemenu">
-                    <li>
-                        <a href="/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/index.html#about">About</a>
-                    </li>
-                    <li>
-                        <a href="/index.html#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="/projects.html">Portfolio</a>
-                    </li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <h1 class="sub-title">My Projects</h1>
-            <br><br>
-            <br><br>
-            <h1 class="sub-sub-title">Viewable Projects</h1>
-            <div class="project-list">
-                <div class="project">
-                    <img src="images/work-1.png">
-                    <div class="layer">
-                        <h3>Image Search App</h3>
-                        <p>The app allows the user to search for images and view the images.</p>
-                        <a href="/image-app.html" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/work-2.png">
-                    <div class="layer">
-                        <h3>Snake Game</h3>
-                        <p>Play the classic snake game. Developed with HTML, CSS, and JavaScript!</p>
-                        <a href="/snake.html" target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-            <br><br>
-            <h1 class="sub-sub-title">Other Projects</h1>
-            <div class="other-projects">
-                <p class="project-desc">Multi-threaded Communication Channel Project (February 2024 - March 2024)</p>
-                <ul>
-                    <li>Developed a multi-threaded communication channel library in C, enabling inter-thread communication.</li>
-                    <li>Utilized mutexes and condition variables for thread synchronization, ensuring thread safety.</li>
-                </ul>
-                <p class="project-desc">Memory Management Project (January 2024 - February 2024)</p>
-                <ul>
-                    <li>Implemented a custom memory management system in C, including memory allocation, reallocation, and free functionalities.</li>
-                    <li>Enhanced performance and organization with an embedded segregated linked list structure and footer optimizations.</li>
-                </ul>
-                <p class="project-desc">Personal Portfolio Website (November 2023 - Present)</p>
-                <ul>
-                    <li>Developed a personal portfolio website with HTML, CSS, and JavaScript.</li>
-                </ul>
-                <p class="project-desc">Mini CPU (October 2023 - November 2023)</p>
-                <ul>
-                    <li>Implemented a foundational data path architecture using Verilog, integrating pipelining for concurrent instruction execution.</li>
-                </ul>
-                <p class="project-desc">Course Scheduler Project (April 2023 - May 2023)</p>
-                <ul>
-                    <li>Created a course scheduler application with a GUI, including both user and admin functionality.</li>
-                    <li>Developed with Apache Derby Database, SQL, and Java Swing.</li>
-                </ul>
-            </div>
-            <a href="https://github.com/braydenpettigrew" target="_blank" class = "btn btn2">See more</a>
+      <div class="container">
+        <nav>
+          <!-- unordered list: -->
+          <ul id="sidemenu">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/index.html#about">About</a>
+            </li>
+            <li>
+              <a href="/index.html#contact">Contact</a>
+            </li>
+            <li>
+              <a href="/projects.html">Portfolio</a>
+            </li>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <h1 class="sub-title">My Portfolio</h1>
+        <br /><br />
+        <br /><br />
+        <h1 class="sub-sub-title">Projects</h1>
+        <div class="other-projects">
+          <p class="project-desc">Food Vision Mini (July 2024 - August 2024)</p>
+          <ul>
+            <li>
+              Engineered and fine-tuned an EfficientNetB2 feature extractor
+              model for food classification with PyTorch.
+            </li>
+            <li>
+              Achieved a high prediction accuracy of 96.88% through thorough
+              training, validating, and testing the model.
+            </li>
+            <li>
+              Visualized model performance and results using Matplotlib,
+              creating informative plots to analyze accuracy and loss.
+            </li>
+            <li>
+              <a href="https://huggingface.co/braydenpettigrew"
+                >View this project on Hugging Face!</a
+              >
+            </li>
+          </ul>
+          <p class="project-desc">
+            Bella Vita Mobile App (May 2024 - July 2024)
+          </p>
+          <ul>
+            <li>
+              Developed a group-based social media app using React Native,
+              JavaScript, and Firebase.
+            </li>
+            <li>
+              Implemented core social media features, including posting, liking,
+              and commenting, creating an engaging user experience.
+            </li>
+            <li>
+              Integrated Firebase Realtime Database, Cloud Storage, and
+              Firestore for efficient data management and real-time updates.
+            </li>
+            <li>
+              Received positive feedback from users who enjoyed the app’s
+              functionality and ease of use.
+            </li>
+          </ul>
+          <p class="project-desc">
+            Multi-threaded Communication Channel Project (February 2024 - March
+            2024)
+          </p>
+          <ul>
+            <li>
+              Developed a multi-threaded communication channel library in C,
+              enabling inter-thread communication.
+            </li>
+            <li>
+              Utilized mutexes and condition variables for thread
+              synchronization, ensuring thread safety.
+            </li>
+          </ul>
+          <p class="project-desc">
+            Memory Management Project (January 2024 - February 2024)
+          </p>
+          <ul>
+            <li>
+              Implemented a custom memory management system in C, including
+              memory allocation, reallocation, and free functionalities.
+            </li>
+            <li>
+              Enhanced performance and organization with an embedded segregated
+              linked list structure and footer optimizations.
+            </li>
+          </ul>
+          <p class="project-desc">Mini CPU (October 2023 - November 2023)</p>
+          <ul>
+            <li>
+              Implemented a foundational data path architecture using Verilog,
+              integrating pipelining for concurrent instruction execution.
+            </li>
+          </ul>
+          <p class="project-desc">
+            Course Scheduler Project (April 2023 - May 2023)
+          </p>
+          <ul>
+            <li>
+              Created a course scheduler application with a GUI, including both
+              user and admin functionality.
+            </li>
+            <li>Developed with Apache Derby Database, SQL, and Java Swing.</li>
+          </ul>
         </div>
+        <br /><br />
+        <br /><br />
+        <h1 class="sub-sub-title">Just For Fun</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Image Search App</h3>
+              <p>
+                The app allows the user to search for images and view the
+                images.
+              </p>
+              <a href="/image-app.html" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Snake Game</h3>
+              <p>
+                Play the classic snake game. Developed with HTML, CSS, and
+                JavaScript!
+              </p>
+              <a href="/snake.html" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <br /><br />
+        <a
+          href="https://github.com/braydenpettigrew"
+          target="_blank"
+          class="btn btn2"
+          >See more</a
+        >
+      </div>
     </div>
     <div class="copyright">
-        <p></p>
+      <p></p>
     </div>
 
     <!-- JavaScript for the side menu on smaller devices -->
     <script>
-        var sidemenu = document.getElementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
-            sidemenu.style.right = "0";            
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";            
-        }
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
-
-</body>
-<!-- Include the jquery.js library -->
-<script src="jquery-3.7.1.js" type="text/javascript"></script>
-<!-- Include JQ.js -->
-<script src="JQ.js" type="text/javascript"></script>
+  </body>
+  <!-- Include the jquery.js library -->
+  <script src="jquery-3.7.1.js" type="text/javascript"></script>
+  <!-- Include JQ.js -->
+  <script src="JQ.js" type="text/javascript"></script>
 </html>
