@@ -1,153 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website - Brayden Pettigrew</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-    <script src="https://kit.fontawesome.com/11eb8d3ef0.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/11eb8d3ef0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <!-- nav tag is used to provide navigation links -->
-            <nav>
-                <!-- unordered list: -->
-                <ul id="sidemenu">
-                    <li>
-                        <a href="#header">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="/projects.html">Portfolio</a>
-                    </li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <!-- p represents small text or a paragraph, br adds a line break -->
-                <p>Student at the Pennsylvania State University</p>
-                <h1>Hello, I am <span>Brayden<br>Pettigrew</span> from<br>Doylestown, PA</h1>
-            </div>
+      <div class="container">
+        <!-- nav tag is used to provide navigation links -->
+        <nav>
+          <!-- unordered list: -->
+          <ul id="sidemenu">
+            <li>
+              <a href="#header">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <!-- <a href="/projects.html">Portfolio</a> -->
+            </li>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- p represents small text or a paragraph, br adds a line break -->
+          <p>Student at the Pennsylvania State University</p>
+          <h1>
+            Hello, I am
+            <span>Brayden<br />Pettigrew</span> from<br />Doylestown, PA
+          </h1>
         </div>
+      </div>
     </div>
 
     <!-- -------------about------------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png" alt="Brayden Pettigrew" id="portrait">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>My name is Brayden Pettigrew and I am from Doylestown, Pennsylvania. Currently, I am a junior studying computer science at the Pennsylvania State University, pursuing my bachelor's degree and honing my skills in software development. I am passionate about learning new concepts, stepping up to difficult challenges, and applying my problem-solving skills.</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="Brayden Pettigrew" id="portrait" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Brayden Pettigrew and I am from Doylestown,
+              Pennsylvania. Currently, I am a junior studying computer science
+              at the Pennsylvania State University, pursuing my bachelor's
+              degree and honing my skills in software development. I am
+              passionate about learning new concepts, stepping up to difficult
+              challenges, and applying my problem-solving skills.
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" data-id="skills">Skills</p>
-                        <p class="tab-links" data-id="experience">Experience</p>
-                        <p class="tab-links" data-id="education">Education</p>
-                    </div>
-                    <!-- skills -->
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Languages</span><br>Python, Java, SQL, C, Verilog, JavaScript, HTML, CSS</li>
-                        </ul>
-                        <ul>
-                            <li><span>Libraries/Frameworks</span><br>jQuery, Git, AWS</li>
-                        </ul>
-                    </div>
-                    <!-- experience -->
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>September 2018 - August 2023</span><br>Server/Host at Wild Ginger III in New Hope, Pennsylvania</li>
-                        </ul>
-                    </div>
-                    <!-- education   -->
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>August 2021 - May 2025</span><br>The Pennsylvania State University, Bachelor of Science in Computer Science</li>
-                        </ul>
-                        <ul>
-                            <li><span>August 2017 - May 2021</span><br>Central Bucks East High School, Scholar's Diploma</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" data-id="skills">Skills</p>
+              <p class="tab-links" data-id="experience">Experience</p>
+              <p class="tab-links" data-id="education">Education</p>
             </div>
+            <!-- skills -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Skills</span><br />Python, SQL, C, Verilog, JavaScript,
+                  TypeScript, HTML, CSS, Git, React, React Native, Firebase,
+                  PyTorch
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span>Certifications</span><br />React Native via Udemy,
+                  PyTorch via Udemy
+                </li>
+              </ul>
+            </div>
+            <!-- experience -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>September 2018 - August 2024</span><br />Server/Host at
+                  Wild Ginger III in New Hope, Pennsylvania
+                </li>
+              </ul>
+            </div>
+            <!-- education   -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>August 2021 - May 2025</span><br />The Pennsylvania
+                  State University, Bachelor of Science in Computer Science
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span>August 2017 - May 2021</span><br />Central Bucks East
+                  High School, Scholar's Diploma
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>    
-    
+      </div>
+    </div>
+
     <!-- -------------contact------------- -->
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> braydenlpettigrew@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 267-454-8234</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/braypett/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/braydenpettigrew"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/braydenpettigrew/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <a href="Brayden-Pettigrew-Resume.pdf" download class="btn btn2">Download Resume</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              braydenlpettigrew@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 267-454-8234</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/braypett/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/braydenpettigrew"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/braydenpettigrew/?hl=en"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
+            <a href="Brayden-Pettigrew-Resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p></p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p></p>
+      </div>
     </div>
 
     <!-- JavaScript for the side menu on smaller devices -->
     <script>
-        var sidemenu = document.getElementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
-            sidemenu.style.right = "0";            
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";            
-        }
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
-  
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwni5EnOnJl-wnfyrzHIWQy1uXIuIKQ9z4sJBqVKJ8HyWerqcHGrr1rSfETgPDCszI5/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
-<!-- Include the jquery.js library -->
-<script src="jquery-3.7.1.js" type="text/javascript"></script>
-<!-- Include JQ.js -->
-<script src="JQ.js" type="text/javascript"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwni5EnOnJl-wnfyrzHIWQy1uXIuIKQ9z4sJBqVKJ8HyWerqcHGrr1rSfETgPDCszI5/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+  <!-- Include the jquery.js library -->
+  <script src="jquery-3.7.1.js" type="text/javascript"></script>
+  <!-- Include JQ.js -->
+  <script src="JQ.js" type="text/javascript"></script>
 </html>
